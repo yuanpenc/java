@@ -4,13 +4,11 @@
 
 ## 2. override equals and hashCode
 package equal;
-
 import java.util.Objects;
-
 public class prove {
+
 	int age;
 	String name;
-	
 	public prove(int a, String n) {
 		this.age =a;
 		this .name=n;
