@@ -3,10 +3,9 @@
 ## 1. stringbuffer,stringbuilder
 
 ## 2. override equals and hashCode
-package equal;
+```package equal;
 import java.util.Objects;
 public class prove {
-
 	int age;
 	String name;
 	public prove(int a, String n) {
@@ -40,3 +39,19 @@ public class prove {
 		System.out.println(person2.hashCode());
 	}
 }
+```
+## 3. ways to get input from keyboard
+method1: Scanner
+
+```java
+Scanner input = new Scanner(System.in);
+String s  = input.nextLine();
+input.close();
+```
+
+mathod2: BufferedReader 
+
+```java
+BufferedReader input = new BufferedReader(new InputStreamReader(System.in)); 
+String s = input.readLine(); 
+```
