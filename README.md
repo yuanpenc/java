@@ -55,3 +55,26 @@ mathod2: BufferedReader
 BufferedReader input = new BufferedReader(new InputStreamReader(System.in)); 
 String s = input.readLine(); 
 ```
+
+## 4. 异常
+### 引入与分类
+try - catch - finally
+* try-catch
+  ```
+  try{
+  codes that probably causes crash;
+  }catch(Exception ex){ // Exception ex => polymorphism.
+  code for modification or reminding;
+  
+  ex.printStackTrace();//show all the process to trace the crash.
+  throw ex; //throw exception to caller. If caller is main function, then this command will throw ex to JVM and trigle two  effects: (1) print infomation of exception. (2) stop the program.
+  }
+  ```
+ 
+* try-catch-finally
+1. once using finally, the code in finally part would run eventully. No matter what are in try or catch part, no matter the program is crashed or not.
+2. In finally, we normally deal with shuting down database resource, IO flow and socket.  
+```
+
+```
+
