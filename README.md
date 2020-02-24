@@ -121,7 +121,9 @@ throw new RuntimeException("oops");
 
 }
 ```
+
 #### The difference  between throw and throws
+
 1. 方法内部 vs 方法声明处
 2. throw 异常对象 vs throws 异常类型
 3. throw 异常出现的源头 vs throws 向caller抛出异常，让caller去处理。
