@@ -72,9 +72,25 @@ try - catch - finally
   ```
  
 * try-catch-finally
-1. once using finally, the code in finally part would run eventully. No matter what are in try or catch part, no matter the program is crashed or not.
-2. In finally, we normally deal with shuting down database resource, IO flow and socket.  
+1. once using finally, the code in finally part would run eventully(except for System.exit(status:1)). No matter what are in try or catch part, no matter the program is crashed or not.
+2. In finally, we normally deal with shuting down database resource, IO flow and socket. 
+3. return commmand will not conflict with finally. Finally runs before return. 
 ```
-
+try{
+  codes that probably causes crash;
+  }catch(ArithmaticException ex){ 
+  code for modification or reminding.
+  ex.printStackTrace();//show all the process to trace the crash.
+  }catch(InputMismatchException ex){
+  //some code.
+  }catch(Exception ex){
+  //put in the last place.
+  }finally{
+  //some code would definitely run by program normally.
+  }
 ```
+* Exception Category
+<p align="center">
+  <img src="./pic/Screen Shot 2020-02-23 at 9.31.13 PM.png" width="400">
+</p>
 
