@@ -93,16 +93,24 @@ try{
 <p align="center">
   <img src="./pic/Screen Shot 2020-02-23 at 9.31.13 PM.png" width="400">
 </p>
+
+
 * Runtime Exception 
+
 ArrayIndexOutOfBounds... NullPointer... Arithmatic... etc.
+
 * compile Exception
+
 ```
 Class.forname("Text").newInstance();
 //Where has two risks: no Text class or instance exception.
 ```
+
+
 WAY TO HANDLE THIS SITUATION
 1. Utilize try-catch to capture the Exception
 2. Throws Exception
+
 ```
 Public Static void main(String[] args) throws Exception{
 
@@ -120,6 +128,7 @@ throw new RuntimeException("oops");
 
 
 }
+
 ```
 
 #### The difference  between throw and throws
