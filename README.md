@@ -58,7 +58,7 @@ String s = input.readLine();
 
 ## 4. 异常
 ### 引入与分类
-try - catch - finally
+#### try - catch - finally
 * try-catch
   ```
   try{
@@ -89,8 +89,39 @@ try{
   //some code would definitely run by program normally.
   }
 ```
-* Exception Category
+#### Exception Category
 <p align="center">
   <img src="./pic/Screen Shot 2020-02-23 at 9.31.13 PM.png" width="400">
 </p>
+* Runtime Exception 
+ArrayIndexOutOfBounds... NullPointer... Arithmatic... etc.
+* compile Exception
+```
+Class.forname("Text").newInstance();
+//Where has two risks: no Text class or instance exception.
+```
+WAY TO HANDLE THIS SITUATION
+1. Utilize try-catch to capture the Exception
+2. Throws Exception
+```
+Public Static void main(String[] args) throws Exception{
 
+....
+throw new Exception("oops");
+....
+}
+or 
+
+Public Static void main(String[] args){
+
+....
+throw new RuntimeException("oops");
+....
+
+
+}
+```
+#### The difference  between throw and throws
+1. 方法内部 vs 方法声明处
+2. throw 异常对象 vs throws 异常类型
+3. throw 异常出现的源头 vs throws 向caller抛出异常，让caller去处理。
