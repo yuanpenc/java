@@ -136,3 +136,42 @@ throw new RuntimeException("oops");
 1. 方法内部 vs 方法声明处
 2. throw 异常对象 vs throws 异常类型
 3. throw 异常出现的源头 vs throws 向caller抛出异常，让caller去处理。
+
+## 5. IO Stream
+### 字节流
+read one byte once， 不能很好的表示汉字，会变成乱码。
+```
+public class Test {
+	public void main (String arg[]) throws IOException{
+		File file= new File(pathname: "/user/....");
+		FileInputStream fis= new FileInputStream(file);
+		int n = fis.read();
+		while(n!=-1){
+			System.out.println(n);
+			n=fis,read();
+		}
+		fis.close();
+	}
+}
+```
+提高效率的方法，改变每次读入对字节，同时返回每次读入对字节数。利用缓存数组。
+```
+byte[] b=new byte[];
+int len=fis.read(b);
+while(len!=-1){
+len=fis.read(b);
+}
+```
+以上是读取文件，接下来是写入文件。
+```
+...
+File file= new File(pathname: "/user/d.txt");
+FileOutputstream fos=new FileOutputStream(file); 
+String str="dafhkahdfkhakdfhak";
+byte[] b= str.getBytes();
+fos.write();
+fos.close();
+
+
+```
+
