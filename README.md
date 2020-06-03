@@ -298,6 +298,22 @@ B 收到 A 结束的消息后 B 可能还没说完，没法立即回复结束标
 Get 参数放在 url 中；Post 参数放在 request Body 中
 Get 可能不安全，因为参数放在 url 中
 
+1、传送方式：get通过地址栏传输，post通过报文传输。
+
+2、传送长度：get参数有长度限制（受限于url长度），而post无限制
+
+3、GET和POST还有一个重大区别，简单的说：
+
+GET产生一个TCP数据包；POST产生两个TCP数据包
+
+长的说：
+
+对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；
+
+而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。
+
+也就是说，GET只需要汽车跑一趟就把货送到了，而POST得跑两趟，第一趟，先去和服务器打个招呼“嗨，我等下要送一批货来，你们打开门迎接我”，然后再回头把货送过去。
+
 ### HTTPS
 
 HTTP 是超文本传输协议，明文传输；HTTPS 使用 SSL 协议对 HTTP 传输数据进行了加密
@@ -334,5 +350,9 @@ LinkedList
 
 
 
+### https实现原理
+https://blog.csdn.net/wangtaomtk/article/details/80917081
 
 
+### 单例模式
+https://www.runoob.com/design-pattern/singleton-pattern.html
