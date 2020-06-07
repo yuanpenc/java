@@ -360,3 +360,8 @@ https://www.runoob.com/design-pattern/singleton-pattern.html
 ### database操作命令
 https://blog.csdn.net/weixin_34037173/article/details/85940045
 
+### 索引最右匹配原则
+https://www.jianshu.com/p/b7911e0394b0
+
+Mysql如何为表字段添加索引
+以及五大索引的区别
