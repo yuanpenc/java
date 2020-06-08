@@ -356,6 +356,7 @@ https://blog.csdn.net/wangtaomtk/article/details/80917081
 
 ### 单例模式
 https://www.runoob.com/design-pattern/singleton-pattern.html
+双检验和volatile的原理
 
 ### database操作命令
 https://blog.csdn.net/weixin_34037173/article/details/85940045
