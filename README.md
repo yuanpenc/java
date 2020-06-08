@@ -366,3 +366,6 @@ https://www.jianshu.com/p/b7911e0394b0
 
 Mysql如何为表字段添加索引
 以及五大索引的区别
+
+### java类加载的顺序
+https://www.cnblogs.com/sxkgeek/p/9647992.html
