@@ -388,3 +388,8 @@ jdk1.6ConcurrentHashMap初始化segments=16个空间每个segments是初始化�
 jdk1.7ConcurrentHashMap初始化segments=16个空间每个segments是初始化两个HashEntry 扩容segments=n*2
 原文链接：https://blog.csdn.net/trxcsdn2/article/details/84501027
  
+#### springboot 
+
+starter:
+原理和实现方法
+https://blog.csdn.net/Mr_OOO/article/details/89477948?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
