@@ -369,3 +369,22 @@ Mysql如何为表字段添加索引
 
 ### java类加载的顺序
 https://www.cnblogs.com/sxkgeek/p/9647992.html
+
+
+### spring
+Spring IOC AOP底层实现原理（jdk、cglib两者区别） 功能
+https://blog.csdn.net/qiushi_1990/article/details/84639889
+
+### hashmap, hashtable, currentHashmap
+集合框架 HashMap 的扩容机制， ConcurrnetHashMap 的原理
+https://www.cnblogs.com/liuheng0315/p/7153057.html
+数据结构的初始化大小和扩容机制：
+https://blog.csdn.net/difffate/article/details/70227011?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+
+ArrayList初始化n=10个空间扩容(n3)/2 + 1,如果不够设置传入的值
+HashMap初始化n=16空间扩容2n,在并发环境下，可能会形成环状链表（扩容时可能造成）
+Hashtable初始化n=11空间扩容2n+1
+jdk1.6ConcurrentHashMap初始化segments=16个空间每个segments是初始化一个HashEntry 扩容segments=n2
+jdk1.7ConcurrentHashMap初始化segments=16个空间每个segments是初始化两个HashEntry 扩容segments=n*2
+原文链接：https://blog.csdn.net/trxcsdn2/article/details/84501027
+ 
