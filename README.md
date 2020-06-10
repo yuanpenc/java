@@ -387,6 +387,9 @@ Hashtable初始化n=11空间扩容2n+1
 jdk1.6ConcurrentHashMap初始化segments=16个空间每个segments是初始化一个HashEntry 扩容segments=n2
 jdk1.7ConcurrentHashMap初始化segments=16个空间每个segments是初始化两个HashEntry 扩容segments=n*2
 原文链接：https://blog.csdn.net/trxcsdn2/article/details/84501027
+
+### object 中的常用方法
+https://blog.csdn.net/qq_33098049/article/details/82664061
  
 #### springboot 
 
