@@ -396,3 +396,7 @@ https://blog.csdn.net/qq_33098049/article/details/82664061
 starter:
 原理和实现方法
 https://blog.csdn.net/Mr_OOO/article/details/89477948?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+
+
+#### violate 和 synchronized 的区别
+https://www.cnblogs.com/kaleidoscope/p/9506018.html
